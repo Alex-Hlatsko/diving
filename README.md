@@ -10,6 +10,7 @@
 
 ## Command for start
 - git clone https://github.com/Alex-Hlatsko/Gulp.git
+- cd Gulp
 - npm i (npm install)
 - npm run dev (for development)
 ### or 
