@@ -12,7 +12,7 @@ export const path = {
         html: [`${srcFolder}/_html/**/*.html`,`!${srcFolder}/_html/bit_html/*.html`],
         styles: `${srcFolder}/scss/styles.scss`,
         scripts: `${srcFolder}/js/*.js`,
-        images: `${srcFolder}/images/**/*.{jpg, jpeg, gif, png, webp}`,
+        images: `${srcFolder}/images/**/*.{jpg,jpeg,gif,png,webp,jfif}`,
         svg: `${srcFolder}/images/**/*.svg`,
         fonts: `${srcFolder}/fonts/**/*.ttf`
     },
