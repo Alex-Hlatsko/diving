@@ -23,10 +23,10 @@ global.app = {
 
 //Monitoring files
 function watcher(){
-    gulp.watch(app.path.watch.styles, gulp.series(reset, styles))
-    gulp.watch(app.path.watch.scripts, gulp.series(reset, scripts))
-    gulp.watch(app.path.watch.html, gulp.series(reset, html))
-    gulp.watch(app.path.watch.images, gulp.series(reset, images))
+    gulp.watch(app.path.watch.styles, styles)
+    gulp.watch(app.path.watch.scripts, scripts)
+    gulp.watch(app.path.watch.html, html)
+    gulp.watch(app.path.watch.images, images)
 }
 
 //General tasks
