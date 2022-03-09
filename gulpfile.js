@@ -4,9 +4,10 @@ import { path } from './gulp/config/path.js';
 import { plugins } from './gulp/config/plugins.js';
 
 //Import tasks
+import { html } from './gulp/tasks/html.js';
 import { styles } from './gulp/tasks/styles.js';
 import { scripts } from './gulp/tasks/scripts.js';
-import { html } from './gulp/tasks/html.js';
+import { libs } from './gulp/tasks/libs.js';
 import { server } from './gulp/tasks/server.js';
 import { images } from './gulp/tasks/images.js';
 import { reset } from './gulp/tasks/reset.js';
@@ -33,8 +34,8 @@ function watcher(){
 const mainTasks = gulp.parallel(html, styles, scripts, images, fonts);
 
 //Modes
-const dev = gulp.series(reset, mainTasks, gulp.parallel(server, watcher));
-const build = gulp.series(reset, mainTasks);
+const dev = gulp.series(reset, libs, mainTasks, gulp.parallel(server, watcher));
+const build = gulp.series(reset, libs, mainTasks);
 
 //Export mods
 export { dev }
