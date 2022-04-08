@@ -1,2 +1,2 @@
 # Diving
-Website on React
+Website
