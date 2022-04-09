@@ -6,71 +6,22 @@
 })
 <body>
 
-    <header class="header header__home">
-        <!-- Header Background -->
-        <div class="header__bg" style="background-image: url(./images/pages/home.jpg);"> </div>
-    
-        <div class="header__container">
-            <nav id="navigation">
-                <div class="nav__content">
-                    <div class="logo">
-                        <a href="./index.html"><img src="./images/logo.svg" alt="logo"></a>
-                    </div>
-                    <div class="menu">
-                        <ul>
-                            <li class="menu__item"><a href="./how_we_dive.html" class="menu__item__link">How We Dive</a></li>
-                            <li class="menu__item"><a href="./services.html" class="menu__item__link">Services</a></li>
-                            <li class="menu__item"><a href="./prices.html" class="menu__item__link">Prices</a></li>
-                            <li class="menu__item"><a href="./gallery.html" class="menu__item__link">Gallery</a></li>
-                            <li class="menu__item"><a href="./contact_us.html" class="menu__item__link">Contact Us</a></li>
-                        </ul>
-                        <div class="menu__burger" id="menuToggle"></div>
-                    </div>
-                </div>
-                
-                <div class="social" id="social">
-                    <ul>
-                        <li class="social__item"><a href="#">fb</a></li>
-                        <li class="social__item"><a href="#">in</a></li>
-                        <li class="social__item"><a href="#">yt</a></li>
-                    </ul>
-                </div>
-    
-            </nav>
-            <div class="header__content">
-                <div class="header__content__top">
-                    
-                    
-                    <div class="header__title"><h1 class="header__title">Diving center neptunus</h1></div>
-                    <div class="header__sub-title"><p class="header__sub-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p></div>
-                </div>
-                <div class="header__content__bottom">
-                    <a href="#" class="header__btn btn">Enquire Now</a>
-                    <div class="options">
-                        <div class="language">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                                  EN
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">ES</a>
-                                  <a class="dropdown-item" href="#">GR</a>
-                                  <a class="dropdown-item" href="#">RUS</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="social" id="social">
-                            <ul>
-                                <li class="social__item"><a href="#">fb</a></li>
-                                <li class="social__item"><a href="#">in</a></li>
-                                <li class="social__item"><a href="#">yt</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    @@include('./bit_html/header.html',{
+        "path": {
+            "logo": "./images/logo.svg",
+            "home": "./index.html",
+            "images": "./images/pages/home.jpg",
+            "how_we_dive": "./how_we_dive.html",
+            "services": "./services.html",
+            "pricies": "./prices.html",
+            "gallery": "./gallery.html",
+            "contact_us": "./contact_us.html"
+        },
+        "title": "Diving center<br>neptunus",
+        "sub-title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+    })
+
+    <main></main>
 
     @@include('./bit_html/footer.html',{
         "path": {
@@ -79,6 +30,5 @@
             "slick": "./libs"
         }
     })
-    
 </body>
 </html>

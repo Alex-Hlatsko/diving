@@ -1,3 +1,4 @@
+AOS.init();
 const menuToggle = document.getElementById('menuToggle');
 const navigation = document.getElementById('navigation');
 const social = document.getElementById('social');

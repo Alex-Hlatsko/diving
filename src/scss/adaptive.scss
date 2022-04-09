@@ -15,7 +15,7 @@
         }
     }
   }
-@media only screen and (max-width: 663px) {
+@media only screen and (max-width: 679px) {
     header.header{
         .header__container{
             nav{
@@ -60,8 +60,10 @@
                         }
                     }
                     .header__sub-title{
+                        margin-top: 0;
                         p{
-                            font-size: 16px;
+                            margin-top: 5px;
+                            font-size: 14px;
                         }
                     }
                 }
