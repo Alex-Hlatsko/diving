@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include("./bit_html/head.html", {
-    "title": "Gallery",
+@@include('./bit_html/head.html', {
+    "title": "Home",
     "styles": "./css/style.min.css"
 })
 <body>
     @@include('./bit_html/header.html',{
         "path": {
-            "images": "./images"
-        }
+            "logo": "./images/logo.png",
+            "home": "./index.html",
+            "images": "./images/pages/how_we_dive.jpg",
+            "how_we_dive": "./how_we_dive.html",
+            "services": "./services.html",
+            "pricies": "./prices.html",
+            "gallery": "./gallery.html",
+            "contact_us": "./contact_us.html"
+        },
+        "title": "How we diving",
+        "sub-title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
     })
 
     <main></main>
-    
+
     @@include('./bit_html/footer.html',{
         "path": {
             "images": "./images",
             "script": "./js",
-            "slick": "../libs"
+            "slick": "./libs"
         }
     })
     
