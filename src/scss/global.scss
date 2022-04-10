@@ -1,3 +1,23 @@
 body{
-    font-family: Helvetica Regular;
+    font-family: "Helvetica Regular";
+    background-color: $black;
+    color: $white;
+}
+.social{
+    ul{
+        display: flex;
+        list-style: none;
+        font-size: 22px;
+        .social__item{
+            margin-left: 30px;
+            a{
+                text-transform: uppercase;
+                color: $white;
+                text-decoration: none;
+                &:hover{
+                    border-bottom: 2px solid $white;
+                }
+            }
+        }
+    }
 }
