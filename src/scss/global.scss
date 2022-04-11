@@ -21,3 +21,19 @@ body{
         }
     }
 }
+.title{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 400;
+}
+.sub-title{
+    margin-top: 15px;
+    font-size: 18px;
+    color: $grey;
+    font-weight: 400;
+}
+.text-bold{
+    font-weight: 800;
+    color: $white;
+}
