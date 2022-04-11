@@ -21,10 +21,6 @@
         background-size: cover;
         animation-name: header_bg;
         animation-duration: 1s;
-        img{
-            width: 100%;
-            height: 100%;
-        }
     }
     .header__container{
         width: 100%;
@@ -253,7 +249,7 @@
         .footer__contact{
             .footer__contact__title{
                 h1{
-                    font-size: 36px;
+                    font-size: 32px;
                     text-transform: uppercase;
                     font-weight: 400;
                     margin-bottom: 15px;
@@ -279,13 +275,16 @@
     padding: 15px;
     border-top: 1px solid $white;
     text-align: center;
+    font-size: 12px;
+    color: $grey;
 }
 .offers{
     width: 100%;
     padding: 30px;
     .offers__title{
         text-align: center;
-        font-size: 36px;
+        font-size: 32px;
+        text-transform: uppercase;
     }
     .offers__slider{
         margin-top: 30px;
@@ -305,13 +304,14 @@
                 }
                 .box__title{
                     margin-top: 15px;
-                    font-size: 24px;
+                    font-size: 18px;
+                    font-weight: 400;
                     text-transform: uppercase;
                     color: $white;
                 }
                 .box__sub-title{
                     margin-bottom: 15px;
-                    font-size: 18px;
+                    font-size: 16px;
                     color: $grey;
                 }
                 .box__btn{
@@ -345,6 +345,75 @@
         .slick-active button{
             background-color: $white;
             height: 4px;
+        }
+    }
+}
+.contact{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    .contact__bg{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background-image: url(../images/bg_contact.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-name: header_bg;
+        animation-duration: 1s;
+    }
+    .contact__content{
+        padding-top: 30px;
+        position: absolute;
+        max-width: 600px;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .contact__title{
+            font-size: 32px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .contact__name{
+            display: flex;
+            input:first-child{
+                margin-right: 10px;
+            }
+            input:last-child{
+                margin-left: 10px;
+            }
+        }
+        input{
+            margin-top: 20px;
+            padding: 5px 15px;
+            background: rgba($color: $black, $alpha: 0.5);
+            border: 1px solid $white;
+            border-radius: 2px;
+            width: 100%;
+            color: $white;
+        }
+        .contact__btn{
+            margin-top: 15px;
+            padding: 5px 0;
+            width: 100%;
+            background: none;
+            border: 1px solid $white;
+            color: $white; 
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: 0.2s;
+            &:hover{
+                background-color: $white;
+                color: $black;
+            }
         }
     }
 }

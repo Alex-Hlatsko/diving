@@ -59,8 +59,8 @@
             }
         }
     }
-  }
-  @media only screen and (max-width: 527px) {
+}
+@media only screen and (max-width: 527px) {
     footer.footer{
         padding: 15px 0;
         .footer__content{
@@ -131,6 +131,11 @@
                     }
                 }
             }  
+        }
+    }
+    div.contact{
+        .contact__content{
+            padding: 15px 10px;
         }
     }
 }
