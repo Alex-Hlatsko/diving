@@ -136,6 +136,15 @@
     div.contact{
         .contact__content{
             padding: 15px 10px;
+            .contact__title{
+                margin-bottom: 0;
+                margin-top: 10px;
+                font-size: 24px;
+            }
+            .contact__btn{
+                font-size: 14px;
+            }
         }
+
     }
 }
