@@ -280,3 +280,71 @@
     border-top: 1px solid $white;
     text-align: center;
 }
+.offers{
+    width: 100%;
+    padding: 30px;
+    .offers__title{
+        text-align: center;
+        font-size: 36px;
+    }
+    .offers__slider{
+        margin-top: 30px;
+        .offers__slider__item{
+            margin: 15px;
+            .offers__slider__box{
+                width: 300px;
+                img{
+                    max-width: 100%;
+                    opacity: 0.5;
+                    transition: 0.5s;
+                }
+                &:hover{
+                    img{
+                        opacity: 1;
+                    }
+                }
+                .box__title{
+                    margin-top: 15px;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+                .box__sub-title{
+                    margin-bottom: 15px;
+                    font-size: 18px;
+                    color: $grey;
+                }
+                .box__btn{
+                    text-decoration: none;
+                    color: $white;
+                    padding: 5px 15px;
+                    border: 1px solid $white;
+                    transition: 0.2s;
+                    &:hover{
+                        background-color: $white;
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .slick-dots{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            button{
+                font-size: 0;
+                border: none;
+                margin: 5px 15px;
+                width: 30px;
+                height: 2px;
+                background-color: $grey;
+            }
+        }
+        .slick-active button{
+            background-color: $white;
+            height: 4px;
+        }
+    }
+}

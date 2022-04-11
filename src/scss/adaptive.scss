@@ -118,4 +118,19 @@
             }
         }
     }
+    div.offers{
+        padding: 15px 15px;
+        h1.offers__title{
+            font-size: 24px;
+        }
+        .offers__slider{
+            .offers__slider__item{
+                .offers__slider__box{
+                    img{
+                        width: 90%;
+                    }
+                }
+            }  
+        }
+    }
 }
