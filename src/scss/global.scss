@@ -5,11 +5,12 @@ body{
 }
 .social{
     ul{
+        padding: 0;
         display: flex;
         list-style: none;
         font-size: 22px;
         .social__item{
-            margin-left: 30px;
+            margin: 15px;
             a{
                 text-transform: uppercase;
                 color: $white;
