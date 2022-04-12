@@ -18,8 +18,6 @@
     div.content__block{
         .content__block__img{
             width: 40%;
-            img{
-            }
         }
         .content__block__text{
             width: 60%;
@@ -191,5 +189,29 @@
             }
         }
 
+    }
+    .title{
+        margin-top: 15px;
+    }
+    div.table{
+        padding: 30px 10px;
+        table{
+            thead{
+                tr{
+                    td{
+                        font-size: 16px;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

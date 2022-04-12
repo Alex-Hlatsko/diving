@@ -2,7 +2,8 @@
 <html lang="en">
 @@include('./bit_html/head.html', {
     "title": "Contact",
-    "styles": "./css/style.min.css"
+    "styles": "./css/style.min.css",
+    "libs": "./libs"
 })
 <body>
 
@@ -21,7 +22,19 @@
         "sub-title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
     })
 
-    <main></main>
+    <div class="contact">
+        <div class="contact__bg"></div>
+        <div class="contact__content">
+                <h1 class="contact__title">Stay Up to Date</h1>
+                <div class="contact__name">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Country">
+                <button class="contact__btn">I want to get deals</button>
+        </div>
+    </div>
 
     @@include('./bit_html/footer.html',{
         "path": {

@@ -433,3 +433,35 @@
         }
     }
 }
+.table{
+    padding: 60px 30px 10px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $white;
+    table{
+        width: 100%;
+        border: 1px solid $white;
+        thead{
+            tr{
+                td{
+                    font-size: 20px;
+                    font-weight: 800;
+                    border-bottom: 1px solid $white;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    border: none;
+                    p{
+                        color: $grey;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
