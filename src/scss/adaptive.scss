@@ -13,6 +13,35 @@
             }
         }
     }
+    div.menu__cards{
+        margin: 15px 0;
+        width: 100%;
+        padding: 10px;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        .menu__card{
+            position: relative;
+            margin: 10px;
+            height: 100%;
+            width: 250px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            .menu__card__title{
+                position: absolute;
+                z-index: 11;
+                bottom: 15px;
+                width: 100%;
+                text-align: center;
+                h1{
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 920px) {
     div.content__block{
@@ -21,6 +50,12 @@
         }
         .content__block__text{
             width: 60%;
+        }
+    }
+    div.gallery__menu{
+        padding: 10px;
+        .gallery__menu__content{
+            height: 250px;
         }
     }
     .footer{
@@ -79,6 +114,46 @@
                             font-size: 16px;
                         }
                     }
+                }
+            }
+        }
+    }
+    div.gallery__menu{
+        .gallery__menu__content{
+            display: block;
+            height: 100%;
+            .item__long, .item__small{
+                width: 95%;
+                height: 200px;
+            } 
+        }
+    }
+    div.menu__cards{
+        margin: 15px 0;
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .menu__card{
+            position: relative;
+            margin: 10px;
+            height: 200px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            .menu__card__title{
+                position: absolute;
+                z-index: 11;
+                bottom: 15px;
+                width: 100%;
+                text-align: center;
+                h1{
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: $white;
                 }
             }
         }

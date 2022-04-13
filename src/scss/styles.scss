@@ -198,6 +198,35 @@
         }
     }
 }
+.menu__cards{
+    margin: 15px 0;
+    width: 100%;
+    padding: 15px;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    .menu__card{
+        position: relative;
+        margin: 10px;
+        height: 100%;
+        width: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .menu__card__title{
+            position: absolute;
+            z-index: 11;
+            bottom: 15px;
+            width: 100%;
+            text-align: center;
+            h1{
+                font-size: 18px;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+    }
+}
 .footer{
     width: 100%;
     padding: 30px;
@@ -293,7 +322,7 @@
             .offers__slider__box{
                 width: 300px;
                 img{
-                    max-width: 100%;
+                    max-width: 90%;
                     opacity: 0.5;
                     transition: 0.5s;
                 }
@@ -304,14 +333,14 @@
                 }
                 .box__title{
                     margin-top: 15px;
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 400;
                     text-transform: uppercase;
                     color: $white;
                 }
                 .box__sub-title{
                     margin-bottom: 15px;
-                    font-size: 16px;
+                    font-size: 14px;
                     color: $grey;
                 }
                 .box__btn{
@@ -392,7 +421,7 @@
             }
         }
         input{
-            margin-top: 20px;
+            margin-top: 30px;
             padding: 5px 15px;
             background: rgba($color: $black, $alpha: 0.5);
             border: 1px solid $white;
@@ -401,7 +430,7 @@
             color: $white;
         }
         .contact__btn{
-            margin-top: 15px;
+            margin-top: 30px;
             padding: 5px 0;
             width: 100%;
             background: none;
@@ -426,6 +455,9 @@
     .content__block__text{
         width: 60%;
         padding-right:45px;
+        h1{
+            margin-top: 15px;
+        }
     }
     .content__block__img{
         img{
@@ -476,6 +508,44 @@
                     }
                 }
             }
+        }
+    }
+}
+.gallery__menu{
+    width: 100%;
+    padding: 30px;
+    .gallery__menu__content{
+        margin-top: 30px;
+        display: flex;
+        width: 100%;
+        height: 300px;
+        .gallery__menu__item{
+            position: relative;
+            margin: 15px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                z-index: 11;
+                text-transform: uppercase;
+                font-size: 24px;
+                color: $white;
+                font-weight: 400;
+            }
+        }
+        .item__long{
+            width: 60%;
+            height: 100%; 
+            margin: 15px;
+            
+        }
+        .item__small{
+            width: 40%;
+            height: 100%;
+
         }
     }
 }
