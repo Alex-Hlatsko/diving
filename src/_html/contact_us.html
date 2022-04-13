@@ -2,7 +2,8 @@
 <html lang="en">
 @@include('./bit_html/head.html', {
     "title": "Contact",
-    "styles": "./css/style.min.css"
+    "styles": "./css/style.min.css",
+    "libs": "./libs"
 })
 <body>
 
@@ -21,7 +22,55 @@
         "sub-title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
     })
 
-    <main></main>
+    <div class="content__block">
+        <div class="content__block__text" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-duration="500"
+        data-aos-offset="0">
+            <h1 class="title">About us</h1>
+            <p class="sub-title">Dive Club has grown up over the last 35 years too. It is now a PADI five-star Instructor Development Dive Resort (the original stone walls of the diving centre remain). The Camel Hotel replaces the straw hut accommodation, along with our restaurant, café, and two bars. Camel Dive Club & Hotel is now located in the heart of Na’ama Bay’s pedestrian area.</p>
+            <div class="footer__contact">
+                <div class="footer__contact__content">
+                    <div class="content__title">ADDRESS:</div>
+                    <div class="content__sub-title">Centre of Na’ama Bay, 
+                        Sharm El Sheikh,<br> South Sinai, Egypt</div>
+                </div>
+                <div class="footer__contact__content">
+                    <div class="content__title">email:</div>
+                    <div class="content__sub-title"> dc.neptunus.@gmail.com</div>
+                </div>
+                <div class="footer__contact__content">
+                    <div class="content__title">Tel:</div>
+                    <div class="content__sub-title"> +20-69-3600700</div>
+                </div>
+            </div>
+            <div class="social" id="social">
+                <ul>
+                    <li class="social__item"><a href="#">fb</a></li>
+                    <li class="social__item"><a href="#">in</a></li>
+                    <li class="social__item"><a href="#">yt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content__block__img" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./images/content_img/contact_us.jpg" alt="img">
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact__bg"></div>
+        <div class="contact__content">
+                <h1 class="contact__title">Stay Up to Date</h1>
+                <div class="contact__name">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Country">
+                <button class="contact__btn">I want to get deals</button>
+        </div>
+    </div>
 
     @@include('./bit_html/footer.html',{
         "path": {

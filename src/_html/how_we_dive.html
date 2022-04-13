@@ -2,7 +2,8 @@
 <html lang="en">
 @@include('./bit_html/head.html', {
     "title": "How We Dive",
-    "styles": "./css/style.min.css"
+    "styles": "./css/style.min.css",
+    "libs": "./libs"
 })
 <body>
     @@include('./bit_html/header.html',{
@@ -20,7 +21,82 @@
         "sub-title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
     })
 
-    <main></main>
+    <div class="content__block">
+        <div class="content__block__text" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-duration="500"
+        data-aos-offset="0">
+            <h1 class="title">Your first day</h1>
+            <p class="sub-title">You will usually make your first dive by shore or boat at a local site along the coast. Local sites are sheltered from waves and current and offer an easy and relaxing start to your diving holiday. Our instructors will advise you on other trips.</p>
+            <h1 class="title">Check dive and Refresher course</h1>
+            <p class="sub-title">To ensure that your dives with us are safe and enjoyable, if you have not dived in the last 12 months we will ask you to make a <span class="text-bold">Check dive</span>. This will be the first dive  of your diving package. Before the dive, your instructor assists you in assembling your equipment and briefs you about the skills that you will practice. You spend the first few minutes of the dive practising basic scuba skills with your instructor, before continuing on a guided underwater tour.</p>
+            <p class="sub-title">If you have not dived for two years or more, you will need to take a half-day <span class="text-bold">Refresher course</span>. The Refresher aims to refresh your existing diving knowledge, so that you may participate comfortably in guided dives. The course consists of a short quiz to refresh diving theory, skills practice in confined water and one open water dive. Your instructor will assess your skills and comfort level during the dive, and recommend suitable sites for guided dives on subsequent days.</p>
+        </div>
+        <div class="content__block__img" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./images/content_img/how_we_dive.jpg" alt="img">
+        </div>
+    </div>
+
+    <div class="offers" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="offers__title">Special offers</h1>
+        <div class="offers__slider">
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="./images/special_offers/1.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Five Days Diving</h1>
+                    <p class="box__sub-title">€ 507</p>
+                    <a href="#" class="box__btn">DETAILS</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="./images/special_offers/1.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Dive & Stay – Early Bird Offer</h1>
+                    <p class="box__sub-title">€ 192</p>
+                    <a href="#" class="box__btn">DETAILS</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="./images/special_offers/2.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Three Days Diving</h1>
+                    <p class="box__sub-title">€ 162</p>
+                    <a href="#" class="box__btn">DETAILS</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="./images/special_offers/3.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Become a diver – Early Bird Offer</h1>
+                    <p class="box__sub-title">€ 192</p>
+                    <a href="#" class="box__btn">DETAILS</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="./images/special_offers/4.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Five Days Diving</h1>
+                    <p class="box__sub-title">€ 507</p>
+                    <a href="#" class="box__btn">DETAILS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact__bg"></div>
+        <div class="contact__content">
+                <h1 class="contact__title">Stay Up to Date</h1>
+                <div class="contact__name">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Country">
+                <button class="contact__btn">I want to get deals</button>
+        </div>
+    </div>
 
     @@include('./bit_html/footer.html',{
         "path": {
