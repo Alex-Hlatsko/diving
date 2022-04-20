@@ -2,22 +2,107 @@
 <html lang="en">
 @@include("../../bit_html/head.html", {
     "title": "The Million Hope",
-    "styles": "../../css/style.min.css"
+    "styles": "../../css/style.min.css",
+    "libs": "../../libs"
 })
 <body>
     @@include('../../bit_html/header.html',{
         "path": {
-            "images": "../../images"
-        }
+            "logo": "../../images/logo.svg",
+            "home": "../../index.html",
+            "images": "../../images/pages/the_million_hope.jpg",
+            "how_we_dive": "../../how_we_dive.html",
+            "services": "../../services.html",
+            "pricies": "../../prices.html",
+            "gallery": "../../gallery.html",
+            "contact_us": "../../contact_us.html"
+        },
+        "title": "The Million Hope",
+        "sub-title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
     })
 
-    <main></main>
-    
+    <div class="gallery">
+        <div class="gallery__content_one" data-aos="fade-up" data-aos-duration="1000">
+            <div class="gallery_content__big"></div>
+            <div class="gallery_content__long"></div>
+            <div class="gallery_content__small1"></div>
+            <div class="gallery_content__small2"></div>
+        </div>
+        <div class="gallery__content_two" data-aos="fade-up" data-aos-duration="1000">
+            <div class="gallery_content__big"></div>
+            <div class="gallery_content__long"></div>
+            <div class="gallery_content__small1"></div>
+            <div class="gallery_content__small2"></div>
+        </div>
+    </div>
+
+    <div class="offers" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="offers__title">Special offers</h1>
+        <div class="offers__slider">
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="../../images/special_offers/1.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Five Days Diving</h1>
+                    <p class="box__sub-title">€ 507</p>
+                    <a href="../special_offers/five_days_diving.html" class="box__btn">DETAILS</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="../../images/special_offers/2.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Dive & Stay – Early Bird Offer</h1>
+                    <p class="box__sub-title">€ 192</p>
+                    <a href="../special_offers/dive_stay_ebo.html" class="box__btn">DETAILS</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="../../images/special_offers/3.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Three Days Diving</h1>
+                    <p class="box__sub-title">€ 162</p>
+                    <a href="../special_offers/three_days_diving.html" class="box__btn">DETAILS</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="../../images/special_offers/4.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Become a diver – Early Bird Offer</h1>
+                    <p class="box__sub-title">€ 192</p>
+                    <a href="../special_offers/become_diver_ebo.html" class="box__btn">DETAILS</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="../../images/special_offers/2.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Dive & Stay – Early Bird Offer</h1>
+                    <p class="box__sub-title">€ 192</p>
+                    <a href="../special_offers/dive_stay_ebo.html" class="box__btn">DETAILS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact__bg"></div>
+        <div class="contact__content">
+                <h1 class="contact__title">Stay Up to Date</h1>
+                <div class="contact__name">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Country">
+                <button class="contact__btn">I want to get deals</button>
+        </div>
+    </div>
+
     @@include('../../bit_html/footer.html',{
         "path": {
-            "images": "../../images",
+            "logo": "../../images/logo.svg",
             "script": "../../js",
-            "slick": "../../libs"
+            "slick": "../../libs",
+            "menu_top": "../..",
+            "menu_bottom": ".."
         }
     })
     
