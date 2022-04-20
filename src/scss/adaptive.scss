@@ -1,3 +1,8 @@
+@media only screen and (max-width: 1200px) {
+    div.gallery{
+        padding: 15px;
+    }
+}
 @media only screen and (max-width: 1100px) {
     .title{
         font-size: 24px;
@@ -168,6 +173,49 @@
             width: 100%;
             display: flex;
             justify-content: center;
+        }
+    }
+    div.gallery{
+        padding: 10px;
+        .gallery__content_one{
+            display: block;
+            height: 100%;
+            .gallery_content__big{
+                margin-top: 15px;
+                height: 300px;
+            }
+            .gallery_content__long{
+                margin-top: 15px;
+                height: 200px;
+            }
+            .gallery_content__small1{
+                margin-top: 15px;
+                height: 300px;
+            }
+            .gallery_content__small2{
+                margin-top: 15px;
+                height: 300px;
+            }
+        }
+        .gallery__content_two{
+            display: block;
+            height: 100%;
+            .gallery_content__big{
+                margin-top: 15px;
+                height: 300px;
+            }
+            .gallery_content__long{
+                margin-top: 15px;
+                height: 200px;
+            }
+            .gallery_content__small1{
+                margin-top: 15px;
+                height: 300px;
+            }
+            .gallery_content__small2{
+                margin-top: 15px;
+                height: 300px;
+            }
         }
     }
 }

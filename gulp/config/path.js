@@ -13,7 +13,7 @@ export const path = {
         styles: `${srcFolder}/scss/styles.scss`,
         scripts: `${srcFolder}/js/*.js`,
         libs: `${srcFolder}/libs/**/*.*`,
-        images: `${srcFolder}/images/**/*.{jpg,jpeg,gif,png,webp,jfif}`,
+        images: `${srcFolder}/images/**/*.{jpg,jpeg,gif,png,webp,jfif,ico}`,
         svg: `${srcFolder}/images/**/*.svg`,
         fonts: `${srcFolder}/fonts/**/*.ttf`
     },

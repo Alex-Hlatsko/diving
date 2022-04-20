@@ -550,3 +550,58 @@
         }
     }
 }
+.gallery{
+    width: 100%;
+    padding: 30px;
+    *img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+    .gallery__content_one{
+        margin-top: 15px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 15px;
+        grid-template-areas: 
+        "big long long"
+        "big short1 short2";
+    }
+    .gallery_content__big{
+        width: 100%;
+        height: 600px;
+        background-color: $darkblue;
+        grid-area: big;
+    }
+    .gallery_content__long{
+        width: 100%;
+        height: 290px;
+        grid-area: long;
+        background-color: $darkblue;
+    }
+    .gallery_content__small1{
+        width: 100%;
+        height: 290px;
+        background-color: $darkblue;
+        grid-area: short1;
+    }
+    .gallery_content__small2{
+        width: 100%;
+        height: 290px;
+        background-color: $darkblue;
+        grid-area: short2;
+    }
+    .gallery__content_two{
+        margin-top: 15px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 15px;
+        grid-template-areas: 
+        "long long big"
+        "short1 short2 big";
+    }
+}
