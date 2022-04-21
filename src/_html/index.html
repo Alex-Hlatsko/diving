@@ -17,7 +17,10 @@
             "services": "./services.html",
             "pricies": "./prices.html",
             "gallery": "./gallery.html",
-            "contact_us": "./contact_us.html"
+            "contact_us": "./contact_us.html",
+            "lang-es": "./es/index.html",
+            "lang-gr": "./de/index.html",
+            "lang-rus": "./es/index.html"
         },
         "title": "Diving center<br>neptunus",
         "sub-title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
@@ -106,13 +109,15 @@
         <div class="contact__bg"></div>
         <div class="contact__content">
                 <h1 class="contact__title">Stay Up to Date</h1>
-                <div class="contact__name">
-                    <input type="text" placeholder="First name">
-                    <input type="text" placeholder="Last name">
-                </div>
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Country">
-                <button class="contact__btn">I want to get deals</button>
+                <form action="" method="post">
+                    <div class="contact__name">
+                        <input type="text" id="fname" placeholder="First name">
+                        <input type="text" id="lname" placeholder="Last name">
+                    </div>
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="country" placeholder="Country">
+                    <button class="contact__btn" type="submit">I want to get deals</button>
+                </form>
         </div>
     </div>
 
