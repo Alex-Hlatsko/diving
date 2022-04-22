@@ -161,10 +161,12 @@
             .header__content__bottom{
                 position: absolute;
                 padding: 30px;
+                padding-top: 0px;
                 bottom: 0;
                 width: 100%;
                 .header__btn{
                     padding: 10px 30px;
+                    margin-bottom: 30px;
                     color: $white;
                     border: 1px solid $white;
                     &:hover{
@@ -447,7 +449,7 @@
     }
 }
 .content__block{
-    padding: 90px 30px;
+    padding: 90px 60px;
     width: 100%;
     display: flex;
     justify-content: space-between;
