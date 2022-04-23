@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../../../bit_html/head.html', {
+    "logo": "../../../images",
+    "title": "Сноркеллинг для детей",
+    "styles": "../../../css/style.min.css",
+    "libs": "../../../libs"
+})
+<body>
+
+    @@include('../../../bit_html/header.html',{
+        "path": {
+            "logo": "../../../images/logo.svg",
+            "home": "../../index.html",
+            "images": "../../../images/pages/snorkeling_for_children.jpg",
+            "how_we_dive": "../../how_we_dive.html",
+            "services": "../../services.html",
+            "pricies": "../../prices.html",
+            "gallery": "../../gallery.html",
+            "contact_us": "../../contact_us.html",
+            "lang-en": "../../../HTML/activities/snorkelling_boat.html",
+            "lang-es": "../../../es/HTML/activities/snorkelling_boat.html",
+            "lang-gr": "../../../de/HTML/activities/snorkelling_boat.html",
+            "lang-rus": "./snorkelling_boat.html"
+        },
+        "menu": {
+            "home": "Главная",
+            "how_we_dive": "Как мы погружаемся",
+            "services": "Услуги",
+            "prices": "Цены",
+            "gallery": "Галерея",
+            "contact_us": "Контакты"
+        },
+        "btn": "Запросить сейчас",
+        "active-lang": "RUS",
+        "title": "Сноркеллинг для детей",
+        "sub-title": "Lorem Ipsum — это просто текст-пустышка полиграфической и наборной индустрии. С тех пор Lorem Ipsum является стандартным фиктивным текстом в отрасли"
+    })
+
+    <div class="content__block">
+        <div class="content__block__text" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-duration="500"
+        data-aos-offset="0">
+            <h1 class="title">Программа Reef Discovery идеально подходит для детей всех возрастов.</h1>
+            <p class="sub-title">Дети должны уметь плавать и чувствовать себя комфортно в море.
+                Родители или законные опекуны должны постоянно сопровождать детей как в воде, так и на лодке.
+                Если вы планируете нырять и оставить своих детей нырять с маской или быть одни на лодке в течение какого-либо времени, вам необходим <span class="text-bold">частный гид</span>.</p>
+            <p class="sub-title">Детям до 12 лет требуется дополнительный присмотр частного гида.</p>
+        </div>
+        <div class="content__block__img" data-aos="fade-up" data-aos-duration="1000">
+            <img src="../../../images/content_img/snorkelling_for_child.jpg" alt="img">
+        </div>
+    </div>
+
+    <div class="offers" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="offers__title">Специально для тебя</h1>
+        <div class="offers__slider">
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="../../../images/special_offers/1.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Пять дней дайвинга</h1>
+                    <p class="box__sub-title">€ 507</p>
+                    <a href="../../HTML/special_offers/five_days_diving.html" class="box__btn">ДЕТАЛИ</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="../../../images/special_offers/2.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Предложение раннего бронирования</h1>
+                    <p class="box__sub-title">€ 192</p>
+                    <a href="../../HTML/special_offers/dive_stay_ebo.html" class="box__btn">ДЕТАЛИ</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="../../../images/special_offers/3.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Три дня дайвинга</h1>
+                    <p class="box__sub-title">€ 162</p>
+                    <a href="../../HTML/special_offers/three_days_diving.html" class="box__btn">ДЕТАЛИ</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="../../../images/special_offers/4.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Станьте дайвером – Ранняя пташка</h1>
+                    <p class="box__sub-title">€ 192</p>
+                    <a href="../../HTML/special_offers/become_diver_ebo.html" class="box__btn">ДЕТАЛИ</a>
+                </div>
+            </div>
+            <div class="offers__slider__item">
+                <div class="offers__slider__box">
+                    <img src="../../../images/special_offers/2.jpg" alt="special_offers_img">
+                    <h1 class="box__title">Предложение раннего бронирования</h1>
+                    <p class="box__sub-title">€ 192</p>
+                    <a href="../../HTML/special_offers/dive_stay_ebo.html" class="box__btn">ДЕТАЛИ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact__bg"></div>
+        <div class="contact__content">
+                <h1 class="contact__title">Будьте в курсе</h1>
+                <form action="" method="post">
+                    <div class="contact__name">
+                        <input type="text" id="fname" placeholder="Имя">
+                        <input type="text" id="lname" placeholder="Фамилия">
+                    </div>
+                    <input type="email" id="email" placeholder="Эл. Почта">
+                    <input type="text" id="country" placeholder="Страна">
+                    <button class="contact__btn" type="submit">Хочу записаться</button>
+                </form>
+        </div>
+    </div>
+
+    @@include('../../../bit_html/footer.html',{
+        "path": {
+            "logo": "../../../images/logo.svg",
+            "script": "../../../js",
+            "slick": "../../../libs",
+            "menu_top": "../..",
+            "menu_bottom": "../../HTML"
+        },
+        "menu": {
+            "home": "Главная",
+            "how_we_dive": "Как мы погружаемся",
+            "services": "Услуги",
+            "prices": "Цены",
+            "gallery": "Галерея",
+            "contact_us": "Контакты",
+            "activities": "мероприятия",
+            "dive_stay": "Погружайся и оставайся",
+            "food_drinks": "Еда и напитки",
+            "private_boats": "Частные лодки"
+        },
+        "contact-us": "Контакты",
+        "address": "Адрес",
+        "email": "Эл. Почта",
+        "tel": "Тел"
+    })
+    
+</body>
+</html>

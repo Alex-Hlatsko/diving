@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../bit_html/head.html', {
+    "logo": "../images",
+    "title": "Контакты",
+    "styles": "../css/style.min.css",
+    "libs": "../libs"
+})
+<body>
+
+    @@include('../bit_html/header.html',{
+        "path": {
+            "logo": "../images/logo.svg",
+            "home": "./index.html",
+            "images": "../images/pages/contact_us.jpg",
+            "how_we_dive": "./how_we_dive.html",
+            "services": "./services.html",
+            "pricies": "./prices.html",
+            "gallery": "./gallery.html",
+            "contact_us": "./contact_us.html",
+            "lang-en": "../contact_us.html",
+            "lang-es": "../es/contact_us.html",
+            "lang-gr": "../de/contact_us.html",
+            "lang-rus": "./contact_us.html"
+        },
+        "menu": {
+            "home": "Главная",
+            "how_we_dive": "Как мы погружаемся",
+            "services": "Услуги",
+            "prices": "Цены",
+            "gallery": "Галерея",
+            "contact_us": "Контакты"
+        },
+        "btn": "Запросить сейчас",
+        "active-lang": "RUS",
+        "title": "Контакты",
+        "sub-title": "Lorem Ipsum — это просто текст-пустышка полиграфической и наборной индустрии. С тех пор Lorem Ipsum является стандартным фиктивным текстом в отрасли",
+    })
+
+    <div class="content__block">
+        <div class="content__block__text" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-duration="500"
+        data-aos-offset="0">
+            <h1 class="title">О нас</h1>
+            <p class="sub-title">Дайв-клуб вырос за последние 35 лет. Сейчас это пятизвездочный дайв-курорт для инструкторов PADI (сохранились оригинальные каменные стены дайвинг-центра). Camel Hotel заменяет соломенные хижины, а также наш ресторан, кафе и два бара. Camel Dive Club & Hotel теперь расположен в самом центре пешеходной зоны Наама Бэй.</p>
+            <div class="footer__contact">
+                <div class="footer__contact__content">
+                    <div class="content__title">Адрес:</div>
+                    <div class="content__sub-title">Centre of Na’ama Bay, 
+                        Sharm El Sheikh,<br> South Sinai, Egypt</div>
+                </div>
+                <div class="footer__contact__content">
+                    <div class="content__title">Эл. Почта:</div>
+                    <div class="content__sub-title"> dc.neptunus.@gmail.com</div>
+                </div>
+                <div class="footer__contact__content">
+                    <div class="content__title">Тел:</div>
+                    <div class="content__sub-title"> +20-69-3600700</div>
+                </div>
+            </div>
+            <div class="social" id="social">
+                <ul>
+                    <li class="social__item"><a href="https://www.facebook.com/khoorray">fb</a></li>
+                    <li class="social__item"><a href="https://www.instagram.com/khoorray/">in</a></li>
+                    <li class="social__item"><a href="#">yt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content__block__img" data-aos="fade-up" data-aos-duration="1000">
+            <img src="../images/content_img/contact_us.jpg" alt="img">
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact__bg"></div>
+        <div class="contact__content">
+                <h1 class="contact__title">Будьте в курсе</h1>
+                <form action="" method="post">
+                    <div class="contact__name">
+                        <input type="text" id="fname" placeholder="Имя">
+                        <input type="text" id="lname" placeholder="Фамилия">
+                    </div>
+                    <input type="email" id="email" placeholder="Эл. Почта">
+                    <input type="text" id="country" placeholder="Страна">
+                    <button class="contact__btn" type="submit">Хочу записаться</button>
+                </form>
+        </div>
+    </div>
+
+    @@include('../bit_html/footer.html',{
+        "path": {
+            "logo": "../images/logo.svg",
+            "script": "../js",
+            "slick": "../libs",
+            "menu_top": ".",
+            "menu_bottom": "./HTML"
+        },
+        "menu": {
+            "home": "Главная",
+            "how_we_dive": "Как мы погружаемся",
+            "services": "Услуги",
+            "prices": "Цены",
+            "gallery": "Галерея",
+            "contact_us": "Контакты",
+            "activities": "мероприятия",
+            "dive_stay": "Погружайся и оставайся",
+            "food_drinks": "Еда и напитки",
+            "private_boats": "Частные лодки"
+        },
+        "contact-us": "Контакты",
+        "address": "Адрес",
+        "email": "Эл. Почта",
+        "tel": "Тел"
+    })
+</body>
+</html>
