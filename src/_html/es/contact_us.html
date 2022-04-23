@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+@@include('../bit_html/head.html', {
+    "logo": "../images",
+    "title": "Contactos",
+    "styles": "../css/style.min.css",
+    "libs": "../libs"
+})
+<body>
+
+    @@include('../bit_html/header.html',{
+        "path": {
+            "logo": "../images/logo.svg",
+            "home": "./index.html",
+            "images": "../images/pages/contact_us.jpg",
+            "how_we_dive": "./how_we_dive.html",
+            "services": "./services.html",
+            "pricies": "./prices.html",
+            "gallery": "./gallery.html",
+            "contact_us": "./contact_us.html",
+            "lang-en": "../contact_us.html",
+            "lang-es": "./contact_us.html",
+            "lang-rus": "../ru/contact_us.html"
+        },
+        "menu": {
+            "home": "Principal",
+            "how_we_dive": "Como buceamos",
+            "services": "Servicios",
+            "prices": "Precios",
+            "gallery": "Galería",
+            "contact_us": "Contactos"
+        },
+        "btn": "Preguntar ahora",
+        "active-lang": "ES",
+        "title": "Contactos",
+        "sub-title": "Lorem Ipsum es solo un texto ficticio para la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto ficticio estándar de la industria desde entonces."
+    })
+
+    <div class="content__block">
+        <div class="content__block__text" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-duration="500"
+        data-aos-offset="0">
+            <h1 class="title">Sobre nosotros</h1>
+            <p class="sub-title">El club de buceo ha crecido en los últimos 35 años. Ahora es un resort de buceo de cinco estrellas para instructores PADI (se han conservado las paredes de piedra originales del centro de buceo). El Camel Hotel reemplaza las cabañas con techo de paja, así como nuestro restaurante, cafetería y dos bares. Camel Dive Club & Hotel ahora está ubicado en el corazón de la zona peatonal de Naama Bay.</p>
+            <div class="footer__contact">
+                <div class="footer__contact__content">
+                    <div class="content__title">La dirección:</div>
+                    <div class="content__sub-title">Centre of Na’ama Bay, 
+                        Sharm El Sheikh,<br> South Sinai, Egypt</div>
+                </div>
+                <div class="footer__contact__content">
+                    <div class="content__title">Correo electrónico Correo:</div>
+                    <div class="content__sub-title"> dc.neptunus.@gmail.com</div>
+                </div>
+                <div class="footer__contact__content">
+                    <div class="content__title">Tel:</div>
+                    <div class="content__sub-title"> +20-69-3600700</div>
+                </div>
+            </div>
+            <div class="social" id="social">
+                <ul>
+                    <li class="social__item"><a href="https://www.facebook.com/khoorray">fb</a></li>
+                    <li class="social__item"><a href="https://www.instagram.com/khoorray/">in</a></li>
+                    <li class="social__item"><a href="#">yt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content__block__img" data-aos="fade-up" data-aos-duration="1000">
+            <img src="../images/content_img/contact_us.jpg" alt="img">
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact__bg"></div>
+        <div class="contact__content">
+                <h1 class="contact__title">Estar al día</h1>
+                <form action="" method="post">
+                    <div class="contact__name">
+                        <input type="text" id="fname" placeholder="Nombre">
+                        <input type="text" id="lname" placeholder="Apellido">
+                    </div>
+                    <input type="email" id="email" placeholder="Correo electrónico">
+                    <input type="text" id="country" placeholder="El país">
+                    <button class="contact__btn" type="submit">quiero registrarme</button>
+                </form>
+        </div>
+    </div>
+
+    @@include('../bit_html/footer.html',{
+        "path": {
+            "logo": "../images/logo.svg",
+            "script": "../js",
+            "slick": "../libs",
+            "menu_top": ".",
+            "menu_bottom": "./HTML"
+        },
+        "menu": {
+            "home": "Principal",
+            "how_we_dive": "Como buceamos",
+            "services": "Servicios",
+            "prices": "Precios",
+            "gallery": "Galería",
+            "contact_us": "Contactos",
+            "activities": "Eventos",
+            "dive_stay": "Sumérgete y quédate",
+            "food_drinks": "Comida y bebida",
+            "private_boats": "Barcos privados"
+        },
+        "contact-us": "Contactos",
+        "address": "La dirección",
+        "email": "Correo electrónico",
+        "tel": "Tel"
+    })
+</body>
+</html>
