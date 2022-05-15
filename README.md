@@ -13,7 +13,7 @@ Diving site. Includes multilingual, beautiful design, fast loading
 ---
 
 ## Scripts
-- git clone https://github.com/Alex-Hlatsko/Diving.git
+- git clone https://github.com/Alex-Hlatsko/diving.git
 - cd diving
 - npm run dev (for development)
 - npm run build (for production)
