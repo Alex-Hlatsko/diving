@@ -17,3 +17,6 @@ Diving site. Includes multilingual, beautiful design, fast loading
 - cd diving
 - npm run dev (for development)
 - npm run build (for production)
+
+## View website
+https://alex-hlatsko.github.io/diving/app/
