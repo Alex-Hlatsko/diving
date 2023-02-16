@@ -283,6 +283,23 @@
                     }
                 }
             }
+            nav{
+                .nav__content{
+                    height: 70px;
+                    padding: 10px 25px;
+                    .logo{
+                        img{
+                            width: 60px;
+                        }
+                    }
+                    .menu{
+                        .menu__burger{
+                            width: 35px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
         }
     }
     div.offers{
